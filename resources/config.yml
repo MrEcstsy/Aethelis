@@ -1,0 +1,40 @@
+# (!) DO NOT CHANGE (!)
+version: 1
+
+settings:
+  language: en-us
+  combat:
+    time: 10 # The amount of time in seconds that the player is combat for
+    kill-on-log: true # Kill the player if they log out while in combat
+    ban-all-commands: false # Ban all commands while in combat
+    banned-commands:
+      - spawn
+      - home
+      - tpa
+      - tp
+      - warp
+      - wild
+  economy:
+    starting-balance: 0
+    currency-symbol: '$'
+    max-money: 10000000000000
+    minimum-pay-amount: 1
+
+    # Whether or not users with a balance less than or equal to $0 should be shown in balance-top.
+    # Setting to false will not show people with balances <= 0 in balance-top.
+    # NOTE: After reloading the config, you must also restart for it to appear
+    show-zero-baltop: true
+  factions:
+    invite-timer: 30
+    max-claims: -1
+    claim-cost: 1
+    claims:
+      shield-factor: 0.1
+    blocked-commands:
+      ally: []
+      neutral: 
+        - home
+        - tpa
+      enemy:
+        - home
+        - tpa

@@ -1,0 +1,70 @@
+# Combat Logger
+combat:
+  enter-combat: "&r&cYou are now in combat, do not log out or you will be killed"
+  exit-combat: "&r&cYou are no longer in combat."
+  banned-command: "&r&cYou can not execute this command while in combat"
+economy:
+  display: "&r&aBalance: &c${balance}"
+  display-other: "&r&aBalance of {player}: &c${balance}"
+  # Tags: {date} - Shows current time the command was executed
+  # {page} - Shows the current page
+  # {max_page} - Shows the total amount of pages
+  # {total} - Shows the total amount of money on the server
+  # {balance} - Shows the balance of the player
+  # {player} - Shows the name of the player
+  # {place} - Shows the place of the player
+
+  balance-top: "&r&6Top Balances ({date})"
+  balance-top-header: "&r&e ---- &6Balancetop &e-- &6Page &c{page}&6/&c{max_page} &e----"
+  balance-top-total: "&r&6Server Total: &c${total}"
+  balance-top-body: "&r&f{place}. {player}, ${balance}"
+  balance-top-limit: 10 # The amount of players shown per page
+chat:
+  ally: "&r&l&6ALLY &r&d{RANK_SYMBOL}{FACTION} &r{PLAYER}: {MESSAGE}"
+  faction: "&r&l&6FACTION &r{RANK_SYMBOL}{PLAYER}: {MESSAGE}"
+commands:
+  invalid-player: "&r&4Error: &cInvalid player."
+  invalid-faction: "&r&4Error: &cInvalid faction."
+  invalid-amount: "&r&4Error: &cInvalid amount."
+  member-not-found: "&r&4Error: &cMember not found."
+  not-in-faction: "&r&4Error: &cYou are not in a faction."
+  already-in-faction: "&r&4Error: &cYou are already in a faction."
+  not-leader: "&r&4Error: &cYou are not the leader."
+  no-permission: "&r&4Error: &cYou do not have permission to use this."
+  player-is-faction-banned: "&r&4Error: &c{PLAYER} is banned from your faction."
+  you-are-banned-from-faction: "&r&4Error: &cYou are banned from this faction."
+  faction-full: "&r&4Error: &cThe faction is full."
+factions:
+  claims:
+    command-denied: "&r&cYou are not allowed to execute '{COMMAND}' command in this territory. (Relation: {RELATION})"
+    auto:
+      toggled-off: "&r&cAuto-claiming has been toggled off."
+      max-claimed: "&r&cYour faction has reached the maximum claim limit."
+      no-power: "&r&cYour faction does not have enough power to claim more land."
+    success: "&r&aClaim successful!"
+    over-claimed: "&r&cClaim over-claimed! Territory now belongs to your faction."
+  unclaim:
+    success: "&r&aUnclaim successful!"
+  territory-titles:
+    wilderness-title: "&r&fWilderness"
+    wilderness-subtitle: "&r&7You are now in the wilderness."
+    faction-title: "&r&a{FACTION}"
+    faction-subtitle: "&r&7{DESCRIPTION}"
+  logs:
+    page-too-low: "&r&cPage must be greater than zero."
+    invalid-log: "&r&cInvalid log type or page number! \nUsage: /f logs <kick|ban|invite|join|leave|unban|leader_change> <page>"
+    title: "&r&6Faction Logs: &r&bPage {CURRENTPAGE}/{TOTALPAGES}"
+    actions:
+      kick: "&r&6{TIME} => &a{KICKED} &bwas kicked by &a{KICKER}."
+      ban: "&r&6{TIME} => &a{BANNED} &bwas banned by &a{BANNEDBY}."
+      join: "&r&6{TIME} => &a{JOINED} &bhas joined."
+      leave: "&r&6{TIME} => &a{LEFT} &bhas left."
+      unban: "&r&6{TIME} => &a{UNBANNED} &bwas unbanned by &a{UNBANNEDBY}."
+      invite: "&r&6{TIME} => &a{INVITED} &bwas invited by &a{INVITEDBY}."
+      leader_change: "&r&6{TIME} => &bLeadership has been transferred from &a{OLD} &bto &a{NEW}."
+  death:
+    power: "&r&cYour power is now {POWER}."
+  pvp:
+    attacker-factionless: "&r&cYou can not hurt other players until you have joined a faction."
+    target-factionless: "&r&cYou can not hurt players who are not currently in a faction."
+    cant-attack-in-territory: "&r&cYou can not hurt {PLAYER} in their own territory unless you declare them as enemy."

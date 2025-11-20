@@ -1,0 +1,23 @@
+name: AethelisCore
+main: ecstsy\AethelisCore\Loader
+api: 5.3.0
+version: 1.0.0
+author: ecstsy
+
+permissions:
+  aethelis.default:
+    default: true
+  aethelis.admin:
+    default: op
+  aethelis.eco.give:
+    default: op
+  aethelis.eco.take:
+    default: op
+  aethelis.eco.set:
+    default: op
+  aethelis.eco.reset:
+    default: op
+  aethelis.faction.claim:
+    default: true
+  aethelis.staff-chat:
+    default: op
