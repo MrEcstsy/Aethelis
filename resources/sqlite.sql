@@ -1,7 +1,1 @@
--- #!sqlite
--- # { aethelis_players
--- #   {
-CREATE TABLE IF NOT EXISTS aethelis_players (
-    uuid VARCHAR(36) PRIMARY KEY,
-    username VARCHAR(16) NOT NULL,
-)
+lost the original contents of this file sorry. if someone wants to look thru the code and remake it go for it im too lazy..
